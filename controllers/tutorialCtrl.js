@@ -1,6 +1,6 @@
 angular.module("tutorialCtrlModule", [])
 
-.controller("TutorialCtrl", ["$scope", "Calculations", function($scope, Calculations) {
+.controller("TutorialCtrl", ["$scope", function($scope) {
 
         $scope.tutorialObject = {};
         $scope.tutorialObject.title = "Main Page";
@@ -12,7 +12,7 @@ angular.module("tutorialCtrlModule", [])
         $scope.tutorialObject.bindOutput = 2;
 
         $scope.timesTwo = function() {
-            $scope.tutorialObject.bindOutput = Calculations.timesTwo($scope.tutorialObject.bindOutput);
+            $scope.tutorialObject.bindOutput *= 2;
         }
 
     }])
