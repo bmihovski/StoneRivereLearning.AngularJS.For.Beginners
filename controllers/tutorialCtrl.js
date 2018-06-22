@@ -17,16 +17,6 @@ angular.module("tutorialCtrlModule", [])
 
     }])
 
-.factory("Calculations", function() {
-    var calculations = {};
-
-    calculations.timesTwo = function(a) {
-        return a * 2;
-    };
-
-    calculations.pythagoreanTheorum = function(a, b) {
-        return (a * a) + (b * b);
-    };
-
-    return calculations;
-})
+.controller("TutorialCtrl2", ["$scope", function($scope) {
+    $scope.secondTutorial = "This is the second tutorial!";
+    }]);
