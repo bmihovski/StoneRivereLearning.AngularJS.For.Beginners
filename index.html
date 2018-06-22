@@ -14,13 +14,16 @@
     <p>Number: {{ 2 + 2 }}</p>
     <p>String: {{ tutorialObject.firstname + " " + tutorialObject.lastname }}</p>
     <p><b>Binding: {{ tutorialObject.bindOutput }}</b></p>
-
+    <br/>
+    <br/>
 	<label>First Name:</label>
 	<input ng-model="tutorialObject.firstname">
-	<br>
+    <br>
+    <br>
 	<label>Last Name:</label>
 	<input ng-model="tutorialObject.lastname">
     <button ng-click="timesTwo()">Multiply</button>
-
+    <span tb-welcome-message></span>
+    <div tb-welcome-message></div>
     </body>
 </html>
